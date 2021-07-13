@@ -3,6 +3,7 @@ job('NodeJS Docker example') {
         git('git://github.com/perry9186/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
+            branches('master')
         }
     }
     triggers {
